@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .top{
+    height: 1024px;
+    background-image:url(img-games/background_game.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .top_tittle{
+    font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+color: #FFFFFF;
+width:789px;
+padding-top:217px;
+padding-left: 120px;
+
+  }
+  .top_text{
+    font-weight: 300;
+font-size: 18px;
+line-height: 32px;
+color:#FFFFFF;
+padding-left: 120px;
+width:481px;
+
+  }
+  .top_button{
+    font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color:#FFFFFF ;
+background: #9C0332;
+border-radius: 30px;
+width:234px;
+height: 48px;
+position: absolute;
+margin-top: 44px;
+margin-left: 120px;
+  }
