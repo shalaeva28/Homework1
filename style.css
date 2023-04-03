@@ -11,7 +11,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    width:100%;
+  
   }
   .top_tittle{
     font-weight: 700;
@@ -45,3 +46,42 @@ position: absolute;
 margin-top: 44px;
 margin-left: 120px;
   }
+.games{
+    background-image: url(img-games/background-games2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 556px;
+}
+.games_nav{
+    display: flex;
+    justify-content: space-around;
+    gap:32px;
+    padding-top: 128px;
+    padding-right: 160px;
+  
+}
+.games_tittle{
+  position: relative;
+}
+.games_img{
+width: 379px;
+height: 300px;
+background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+border-radius: 16px;
+position: absolute;
+
+}
+.games_name{
+    font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+position:relative;
+padding-left: 32px;
+padding-bottom: 32px;
+padding-top: 236px;
+}
+
