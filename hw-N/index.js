@@ -44,7 +44,7 @@ let info = prompt("Какую информацию хотите узнать о 
 alert (user.info);
 
 let userName = prompt("Как вас зовут?");
-alert(`Привет,${userName}!`); */
+alert(`Привет,${userName}!`); 
 
 let password="Asssasin";
 let text=prompt("Пароль введен верно");
@@ -113,5 +113,19 @@ switch (monthNumber) {
         console.log ('зима');
         break;                                                              
     default: console.log('Нет такого месяца');
-        break;
+        break;  */
+       
+
+
+let i=0;
+while (i<2) {console.log ("Привет");
+i++;    
 }
+
+let a=1;
+while (i<=5) {console.log (a);
+    a++;
+    
+}
+ 
+
