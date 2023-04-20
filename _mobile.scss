@@ -1,0 +1,38 @@
+@media (max-width: 375px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .game__top{
+        height: 735px;
+        
+
+        &_tittle{
+            padding-top: 238px;
+            font-size: 32px;
+            line-height: 39px;
+            width: 343px;
+            text-align: center;
+        }
+        &_text{
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            text-align: center;
+            padding-top: 32px;
+        }
+    }
+    .game__button{
+        margin-left: 54px;
+        margin-top :32px;
+    }
+    .games{
+        height: 1221px;
+        &__nav{
+            flex-direction: column-reverse;
+        }
+        &__img{
+            width: 343px;
+        }
+    }
+}
