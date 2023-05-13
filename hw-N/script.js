@@ -1,40 +1,73 @@
-i=0;
-while (i<2) { console.log ("Привет");
-i++;
-    
-}
-
-let a=1;
-while (a<=5) {console.log (a);
-a++;    
-}
-
-let b=7;
-while (b<=22) {console.log(b);
-    b++;
-    
-}
-
-let obj ={
-    'Коля':200,
-    'Вася':300,
-    'Петя':400
-};
-for (let key in obj)  {
-    alert (`${key} - зарплата ${obj[key]} долларов.`);
+let smallerNumber = (num1,num2) => {
+    if (num1<=num2) {
+        return num1
+    } else {
+        return num2
     }
-
-let n=1000;
-let num=5;
-while (n>=50) {
-    n=n/2;
-    num++;
-    
 }
-console.log (num);
+ console.log (smallerNumber ( 3,5))
 
-for (let fridayDay=1; fridayDay <=31; fridayDay+=7) {
-   alert(`Сегодня пятница, ${fridayDay}-е число.Необходимо подготовить отчет.`) 
+ let evenNumber = (n) => {
+    if (n % 2 == 0) {
+        console.log ( "Число четное");
+    } else {
+        console.log ("Число нечетное")
+    } 
+ }
+ evenNumber (4)
+
+ let squareNum = (a) => console.log ( a * a);
+ squareNum (5)
+ let squareNumber = (b) => b*b ;
+
+ let age = prompt("Сколько вам лет?");  
+    if (age < 0) { 
+        alert("Вы ввели неправильное значение");
+        } else if (0 <= age <= 12) { 
+        alert("Привет,друг!");
+    } else if ( age >= 13 ) {
+        alert("Добро пожаловать!");}
     
+
+
+  let multiplyNumbers = (num1,num2) => {
+if (isNaN (num1) || isNaN (num2)) {
+    console.log(" Одно или оба значения не являются числом");
+} else {
+    console.log (num1 * num2);
 }
- 
+  }
+multiplyNumbers(22,12)
+
+
+function cubeNumber(){
+    let number = prompt("Введите число");
+    if (isNaN(number)) {
+        console.log("Переданный параметр не является числом")
+    } else {
+        let num =Number (number);
+        let result = num **3;
+        console.log  (`${num} в кубе равняется ${result}`)
+    }
+}
+
+let circle1 = {
+    radius: 5,
+    getArea: function() {
+    return Math.PI * this.radius ** 2;
+    },
+    getPerimeter: function() {
+    return 2 * Math.PI * this.radius;
+    }
+    };
+    
+    let circle2 = {
+    radius: 10,
+    getArea: function() {
+    return Math.PI * this.radius ** 2;
+    },
+    getPerimeter: function() {
+    return 2 * Math.PI * this.radius;
+    }
+    };
+    
