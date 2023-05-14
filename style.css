@@ -63,9 +63,10 @@ body {
 
 .games__nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 32px;
   padding-top: 128px;
+  padding-left: 0px;
 }
 
 .games__tittle {
@@ -77,6 +78,7 @@ body {
   height: 300px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
   border-radius: 16px;
+  position: absolute;
 }
 
 .games__img:hover {
@@ -89,9 +91,39 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
-  position:absolute;
-  left: 32px;
-  bottom: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  padding-top: 236px;
+}
+
+.game__year_time {
+  background-image: url(img-games/Rectangle\ 6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 1440px;
+  padding-top: 282px;
+}
+
+.game__year_time__image {
+  position: absolute;
+  width: 485px;
+  height: 333px;
+  padding-left: 839px;
+  padding-right: 116px;
+  padding-bottom: 233px;
+}
+
+.game__tittle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
 }
 
 @media (max-width: 375px) {

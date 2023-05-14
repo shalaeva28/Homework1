@@ -96,4 +96,30 @@ padding-left: 32px;
 padding-bottom: 32px;
 padding-top: 236px;
 }
+.game__year_time{
+  background-image: url(img-games/Rectangle\ 6.png);
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 1440px;
+    padding-top: 282px;
+}
+.game__year_time__image{
+  position: absolute;
+  width: 485px;
+  height:333px;
+    padding-left: 839px;
+    padding-right: 116px;
+    padding-bottom: 233px;
+
+  }
+
+.game__tittle{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
 @import "mobile";
