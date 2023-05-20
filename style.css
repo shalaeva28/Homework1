@@ -105,8 +105,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 800px;
-  width: 1440px;
   padding-top: 282px;
+}
+.game__year_time__text{
+  font-weight: 300;
+font-size: 18px;
+line-height: 32px;
+width:584px;
+color: #FFFFFF;
 }
 
 .game__year_time__image {
