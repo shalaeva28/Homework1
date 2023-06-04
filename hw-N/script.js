@@ -1,73 +1,82 @@
-let smallerNumber = (num1,num2) => {
-    if (num1<=num2) {
-        return num1
-    } else {
-        return num2
+const arr = [1, 5, 4, 10, 0 , 3];
+for (let i = 0; i < arr.length; i++) {
+   if(arr [i]=== 10) {
+    console.log(arr[i]);
+    break;
+   }
+   console.log (arr[i]); 
+}
+const index = arr.indexOf(4);
+console.log(index);
+
+const numbers = [ 1 , 3 , 5 , 10 , 20];
+numbers = numbers.join(' ');
+console.log(numbers);
+
+const massiv = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1],
+];
+
+const dva = [1, 1, 1];
+dva.push(2, 2, 2);
+console.log(dva);
+
+const arr = [9, 8, 7, 'a', 6, 5];
+arr.sort();
+for (let i = 0; < arr.length; i++) { 
+    if (typeof arr[i] !== "number") {
+        arr.splice(i,1);
+        i--;
     }
 }
- console.log (smallerNumber ( 3,5))
+console.log (arr);
 
- let evenNumber = (n) => {
-    if (n % 2 == 0) {
-        console.log ( "Число четное");
-    } else {
-        console.log ("Число нечетное")
-    } 
- }
- evenNumber (4)
-
- let squareNum = (a) => console.log ( a * a);
- squareNum (5)
- let squareNumber = (b) => b*b ;
-
- let age = prompt("Сколько вам лет?");  
-    if (age < 0) { 
-        alert("Вы ввели неправильное значение");
-        } else if (0 <= age <= 12) { 
-        alert("Привет,друг!");
-    } else if ( age >= 13 ) {
-        alert("Добро пожаловать!");}
-    
-
-
-  let multiplyNumbers = (num1,num2) => {
-if (isNaN (num1) || isNaN (num2)) {
-    console.log(" Одно или оба значения не являются числом");
+const arr =[9, 8, 7, 6,5];
+const userNumber = parselnt(prompt("Введите число от 1 до 10"));
+if (arr.includes(userNumber)) {
+    console.log("Данное число содержится в массиве");
 } else {
-    console.log (num1 * num2);
+    console.log("Данное число не содержиться в массиве");
 }
+
+const strk = 'abcdef';
+const reversedStrk = strk.split('').reverse().join('');
+console.log(reversedStrk);
+
+const arr = [[1, 2, 3,],[4, 5, 6]];
+const newArr = arr.flat(Infinity);
+console.log(newArr);
+
+const arr = [5, 2, 8, 1, 9];
+for (let i = 0; < arr.length - 1; i++) {
+    console.log(arr[i] + arr[i+1]);
+}
+
+function squareArr(arr){
+    return arr.map(num =>
+    Math.pow(num, 2));
+}
+const arr= [1, 2, 3, 4,5];
+const squaredArr =squareArr(arr);
+console.log(squaredArr);
+
+function getLengthWords(arr) {
+    return arr.map(word => word.length);
+    }
+const arr = ['слово', 'слог', 'длинное предложение', 'буква'];
+const lengthArr = getLengthWords(arr);
+console.log(lengthArr); 
+
+Function filterPositive(array) {
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] < 0) {
+        result.push(array[i]);
+      }
+    }
+    return result;
   }
-multiplyNumbers(22,12)
-
-
-function cubeNumber(){
-    let number = prompt("Введите число");
-    if (isNaN(number)) {
-        console.log("Переданный параметр не является числом")
-    } else {
-        let num =Number (number);
-        let result = num **3;
-        console.log  (`${num} в кубе равняется ${result}`)
-    }
-}
-
-let circle1 = {
-    radius: 5,
-    getArea: function() {
-    return Math.PI * this.radius ** 2;
-    },
-    getPerimeter: function() {
-    return 2 * Math.PI * this.radius;
-    }
-    };
-    
-    let circle2 = {
-    radius: 10,
-    getArea: function() {
-    return Math.PI * this.radius ** 2;
-    },
-    getPerimeter: function() {
-    return 2 * Math.PI * this.radius;
-    }
-    };
-    
+  filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+  filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
